@@ -20,6 +20,9 @@ html{
     font-size: 62.5%;
     overflow-x: hidden;
 }
+.text-orange{
+    color: orange;
+}
 
 section{
     min-height: 100vh;
@@ -50,11 +53,28 @@ section{
     color: #fff;
     margin-bottom: 3rem;
 }
+.heading-1{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+   
+    font-size: 3rem;
+    font-weight: bold;
+    color: orange;
+    margin-bottom: 3rem;
+}
 
 .description{
     font-size: 1.7rem;
     
     color:#ffffff;
+    width:80rem;
+    margin:0 auto;
+    text-align: center;
+}
+.description-1{
+    font-size: 1.7rem;
+    
+    color:svart;
     width:80rem;
     margin:0 auto;
     text-align: center;
@@ -117,6 +137,18 @@ header .navbar ul li a:hover{
     align-items: center;
     justify-content: space-between;
     min-height: 75vh;
+    overflow: hidden;
+    background-color: #07101c;
+    background-size: cover;
+    background-position: bottom;
+}
+.home-logoextend{
+    
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 200px;
     overflow: hidden;
     background-color: #07101c;
     background-size: cover;
@@ -188,6 +220,8 @@ header .navbar ul li a:hover{
 .icons-container .icons .info h3{
     font-size: 2rem;
     color: orange;
+    text-decoration: underline;
+    text-shadow: black;
 }
 
 .icons-container .icons .info p{
@@ -201,10 +235,12 @@ header .navbar ul li a:hover{
 
 .service .box-container{
     display: flex;
-    align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     
-    padding:2rem 0;
+
+    
+    
 }
 
 .service .box-container .box{
@@ -214,31 +250,107 @@ header .navbar ul li a:hover{
     margin:3rem;
     width:32rem;
     border-radius: 20px;
+    
+    flex:1 1 25rem;
 }
 
 .service .box-container .box:hover{
-    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    color: rgba(244, 149, 6, 0.5);
+
+    
 }
 
+    
+
+/*
 .service .box-container .box img{
     width:7rem;
     margin:2rem 0;
 }
-
+*/
 .service .box-container .box h3{
     font-size: 2rem;
     color: orange;
+    text-align: center;
 }
 
 .service .box-container .box p{
     font-size: 1.4rem;
     color: whitesmoke;
+    padding:2rem 0;
+}
+.service .box-container .box .btn{
+    padding:.7rem 4rem;
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    color:#ffffff;
+    border:.1rem solid #DEE4EE;
+}
+
+.service .box-container .box .btn:hover{
+    background:orange;
+    color: #07101c;
+   
+}
+.vadvigor{
+    background: #07101c;
+}
+
+.vadvigor .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+
+    
+    
+}
+
+.vadvigor .box-container .box{
+    background:whitesmoke;
+    border:.1rem solid rgba(0,0,0,.1);
+    margin: 2rem;
+    
+    
+    width:95%rem;
+    border-radius: 20px;
+    color: black;
+    
+}
+
+.vadvigor .box-container .box:hover{
+    box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.1);
+    box-shadow: 2 1rem 2rem rgba(255, 255, 255, 0.5);
+}
+/*
+.service .box-container .box img{
+    width:7rem;
+    margin:2rem 0;
+}
+*/
+.vadvigor .box-container .box h3{
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+    padding: 1em;
+    text-decoration: underline;
+    
+}
+
+.vadvigor .box-container .box p{
+    font-size: 1.4rem;
+    color: black;
     padding:1rem 0;
 }
 
 .process{
-    background:#f9f9f9;
+    background:whitesmoke;
+    color: #07101c;
     text-align: center;
+    
 }
 
 .process .box-container{
@@ -247,6 +359,7 @@ header .navbar ul li a:hover{
     justify-content: center;
     flex-wrap: wrap;
     padding:2rem 0;
+    
 }
 
 .process .box-container .box{
@@ -372,7 +485,7 @@ header .navbar ul li a:hover{
 
 .contact{
     background:#f0f0f0;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .contact .box-container{
@@ -388,6 +501,7 @@ header .navbar ul li a:hover{
     text-align: center;
     padding:2rem;
     margin:2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact .box-container .box i{
@@ -414,6 +528,7 @@ header .navbar ul li a:hover{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact form .box{
@@ -424,6 +539,7 @@ header .navbar ul li a:hover{
     color:var(--blue);
     text-transform: none;
     border-bottom: .2rem solid rgba(0,0,0,.1);
+    
 }
 
 .contact form .box::placeholder{
@@ -444,6 +560,7 @@ header .navbar ul li a:hover{
     cursor: pointer;
     color: #07101c;
     border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact form .btn:hover{
@@ -469,7 +586,7 @@ header .navbar ul li a:hover{
 .footer .box-container .box h3{
     padding-bottom: 1rem;
     font-size: 2.5rem;
-    color:#fff;
+    color:orange;
     text-decoration: underline;
 }
 
@@ -521,7 +638,60 @@ header .navbar ul li a:hover{
 .scroll-top img{
     height:7rem;
 }
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
 
+.hurfunkardet{
+    
+    padding: 1rem;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    min-height: 75vh;
+    max-height: 500px;
+    padding: 10%;
+    width: 90%;
+    overflow: hidden;
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 20px;
+}
+
+.hurfunkardet .image{
+    position: relative;
+    top:5.5rem;
+}
+
+.hurfunkardet .image img{
+    width:40rem;
+    border-radius: 50%;
+}
+
+
+.hurfunkardet .content span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    color:rgb(0, 0, 0);
+}
+
+.hurfunkardet .content h3{
+    font-size: 4rem;
+    color:black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;;
+}
+
+.hurfunkardet .content p{
+    font-size: 1.5rem;
+    color:black;
+    padding-bottom: 2rem;
+}
 
 
 
