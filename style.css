@@ -736,7 +736,7 @@ header .navbar ul li a:hover{
         position: fixed;
         top:6.5rem; left:0;
         width:100%;
-        background:#fff;
+        background:#07101c;
         border-top: .2rem solid rgba(0,0,0,.1);
         transform:scaleY(0);
         transform-origin: top;
